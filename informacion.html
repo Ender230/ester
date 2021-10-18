@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-with, initial-scale-1.0">
+    <title>Facultad de Medicina de la UMSNH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navegador">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Información</a></li>
+            <li><a href="misionyvision.html">Misión y Visión</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+        </ul>
+    </div>
+    <div class="encabezado">
+        <img width="100%" src="img/encabezado.jpg">
+    </div>
+    <div id="cuerpo">
+        <div>   <!-- cuerpo de la página -->
+            <div class="reloj">
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var date = new Date();
+                    var d  = date.getDate();
+                    var day = (d < 10) ? '0' + d : d;
+                    var m = date.getMonth() + 1;
+                    var month = (m < 10) ? '0' + m : m;
+                    var yy = date.getYear();
+                    var year = (yy < 1000) ? yy + 1900 : yy;
+                    document.write(day + "/" + month + "/" + year);
+                    //]]>
+                </script>
+                <script type="text/javascript">
+                    function startTime(){
+                    today=new Date();
+                    h=today.getHours();
+                    m=today.getMinutes();
+                    s=today.getSeconds();
+                    m=checkTime(m);
+                    s=checkTime(s);
+                    document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+                    t=setTimeout('startTime()',500);}
+                    function checkTime(i)
+                    {if (i<10) {i="0" + i;}return i;}
+                    window.onload=function(){startTime();}
+                </script>
+                <div id="reloj" style="font-size:20px;"></div>  
+            </div>
+            <h1>Calendarios</h1>
+            <div align="center"><img src="img/calendarios.jpg"></div>
+            <br><br>
+                <h1>Profesores</h1>
+             <div class="texto"><p><br>
+                PRIMER AÑO<br>
+                DR. VÍCTOR HUGO MERCADO GÓMEZ<br><br>
+                SEGUNDO AÑO<br>
+                DR. JOSÉ LUIS MARTÍNEZ TOLEDO<br><br>
+                TERCER AÑO<br>
+                DR. CIPRIANO COLIMA MARÍN<br><br>
+                CUARTO AÑO<br>
+                DR. MARCO ANTONIO LOZANO MARTÍNEZ<br><br>
+                QUINTO AÑO<br>
+                DR. GILBERTO LÓPEZ CHAVIRA<br><br>
+                LICENCIATURA EN NUTRICIÓN HUMANA<br>
+                DR. JOAQUÍN MIRANDA GARCÍA<br><br>
+                <h1>Alumnos</h1><br>
+                PRIMER AÑO<br>
+                JOSAFAT BARUC HERNÁNDEZ RAMÍREZ<br><br>
+                SEGUNDO AÑO<br>
+                PABLO ERIC LÓPEZ ZÚÑIGA<br><br>
+                TERCER AÑO<br>
+                EMILY CELESTE ALANIS ALVÁREZ<br><br>
+                CUARTO AÑO<br>
+                ALBERTO IBARRA BUSTOS<br><br>
+                QUINTO AÑO<br>
+                CARLOS ALBERTO ALVARADO RIVERA<br><br>
+                LICENCIATURA EN NUTRICIÓN HUMANA<br>
+                MARIEL JIMÉNEZ DUARTE<br><br>
+                PRESIDENTE<br>
+                DR. JORGE IGNACIO TAPIA GARIBAY<br><br>
+                SECRETARIA<br>
+                DRA. SANDRA EDITH LÓPEZ CASTAÑEDA</p></div>
+        </div>
+            <br>
+        <div>   <!-- footer -->
+            <h3>Universidad Michoacana de San Nicolás de Hidalgo</h3>
+        </div>
+            <br>
+    </div>
+</body>

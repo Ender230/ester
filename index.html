@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-with, initial-scale-1.0">
+    <title>Facultad de Medicina de la UMSNH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navegador">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="informacion.html">Información</a></li>
+            <li><a href="misionyvision.html">Misión y Visión</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+        </ul>
+    </div>
+    <div class="encabezado">
+        <img width="100%" src="img/encabezado.jpg">
+    </div>
+    <div id="cuerpo">
+        <div>   <!-- cuerpo de la página -->
+            <div class="reloj">
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var date = new Date();
+                    var d  = date.getDate();
+                    var day = (d < 10) ? '0' + d : d;
+                    var m = date.getMonth() + 1;
+                    var month = (m < 10) ? '0' + m : m;
+                    var yy = date.getYear();
+                    var year = (yy < 1000) ? yy + 1900 : yy;
+                    document.write(day + "/" + month + "/" + year);
+                    //]]>
+                </script>
+                <script type="text/javascript">
+                    function startTime(){
+                    today=new Date();
+                    h=today.getHours();
+                    m=today.getMinutes();
+                    s=today.getSeconds();
+                    m=checkTime(m);
+                    s=checkTime(s);
+                    document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+                    t=setTimeout('startTime()',500);}
+                    function checkTime(i)
+                    {if (i<10) {i="0" + i;}return i;}
+                    window.onload=function(){startTime();}
+                </script>
+                <div id="reloj" style="font-size:20px;"></div>  
+            </div>
+            <h1>Noticias</h1>
+                <div align="center"><img src="img/becas.jpg"><br><img src="img/aviso.jpg"><iframe width="720px" height="480px" src="https://www.youtube.com/embed/LgRe0XGg7h0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+            <br><br>
+            <h1>Historia</h1>
+                <br>
+            <div class="texto"><p>La medicina en Michoacán remonta a la época prehispánica, existiendo evidencia escrita tanto en códices como compilaciones posteriores destacando la obra del Dr. Francisco Díaz de León. <br><br>
+
+            Durante la época de la conquista destacan las figuras de Fray Juan de San Miguel y Don Vasco de Quiroga, quienes establecieron centros de atención hospitalaria en distintos puntos del Estado de Mechoacán pero que se basaban bajo el principio teologal de la caridad más que en los principio de la ciencia. <br><br>
+
+            Trasladados en 1580 los poderes gubernamentales y clericales a la antigua ciudad de Valladolid hoy Morelia, se establece como hospital el antiguo palacio episcopal a decisión del arzobispo Juan de Ortega y Montañés, dejando su atención en manos de la orden de San Juan de Dios, perdurando ahí la atención de enfermos menesterosos y ya el uso de alguna base herbolaria. <br><br>
+
+            Una vez concluida la independencia, destaca la figura de Don Juan Manuel González Urueña quien cristaliza la fundación de la cátedra de medicina, sin duda la raíz del árbol que hoy es la Facultad de Ciencias Médicas y Biológicas “Dr. Ignacio Chávez”.
+            En 1829 el Dr. González Urueña es nombrado presidente del protomedicato, junta que tenía como finalidad reglamentar a parteras, farmacéuticos, flebotomianos y demás oficios dedicados a la salud de los vallisoletanos. <br><br>
+
+            Esta junta se dio a la tarea de examinar la problemática social de salud concluyendo que el principal obstáculo era la carencia de personal preparado para ejercer la medicina en la entidad. Ello llevó a proponer al Congreso del Estado la creación de la cátedra de medicina que lograría su fundación el día 1° de Mayo de 1830, aprobada en el decreto número 27 de fecha 09 de Noviembre de 1829.<br><br>
+
+            En 1833 se incorpora la cátedra de cirugía suprimiéndose el protomedicato y creándose el Instituto Médico Quirúrgico de Michoacán y en un segundo decreto el 25 de Mayo del mismo año, se crea como Facultad de Medicina del Estado de Michoacán, lo que la coloca como una de las escuelas más antiguas de la actual Universidad Michoacana de San Nicolás de Hidalgo.<br><br>
+
+            Los cambios históricos y movimientos político sociales del país, ocasionan que la escuela cierre sus actividades durante los conflictos de reforma y finalmente a iniciativa del gobernador Melchor Ocampo, la escuela es incorporada al Colegio de San Nicolás para que ahí se lleven las actividades académicas.<br><br>
+
+            En 1867 se creó el Hospital Civil de Morelia, dotándosele de edificio en el ex convento de Capuchinas e incorporándolo a la escuela médica para darle carácter de Hospital – Escuela.<br><br>
+
+            En 1901 se hace la apertura del Hospital Civil ya con la formalidad de un programa con asignaturas y un edificio planeado ex profeso y basado en el modelo francés; este edificio se ubicó en la antigua calle Real hoy Avenida Madero en donde a la actualidad se encuentran las instalaciones del IMSS.<br><br>
+
+            En 1956 se dota de instalaciones propias tanto a la escuela de Medicina como al Hospital Civil en donde actualmente ambos continúan con sus actividades pero ya de forma independiente.<br><br>
+
+            En 1917 al fundarse la Universidad Michoacana de San Nicolás de Hidalgo, la Facultad pasa a ser dependencia universitaria con el nombre de Facultad de Ciencias Médicas”.<br><br>
+
+            El 29 de Mayo de 1963 la dependencia se registra como “Facultad de Ciencias Médicas y Biológicas”.<br><br>
+
+            En 1972, en honor al Dr. Ignacio Chávez sele agrega su nombre quedando oficialmente como “Facultad de Ciencias Médicas y Biológicas “Dr. Ignacio Chávez”.<br><br>
+
+            El 25 de Noviembre del 2009 se otorga acreditación por parte de COMAEM.</p></div>
+        </div>
+            <br>
+        <div>   <!-- footer -->
+            <h3>Universidad Michoacana de San Nicolás de Hidalgo</h3>
+        </div>
+            <br>
+    </div>
+</body>

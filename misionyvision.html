@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-with, initial-scale-1.0">
+    <title>Facultad de Medicina de la UMSNH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navegador">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="informacion.html">Información</a></li>
+            <li><a href="#">Misión y Visión</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+        </ul>
+    </div>
+    <div class="encabezado">
+        <img width="100%" src="img/encabezado.jpg">
+    </div>
+    <div id="cuerpo">
+        <div>   <!-- cuerpo de la página -->
+            <div class="reloj">
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var date = new Date();
+                    var d  = date.getDate();
+                    var day = (d < 10) ? '0' + d : d;
+                    var m = date.getMonth() + 1;
+                    var month = (m < 10) ? '0' + m : m;
+                    var yy = date.getYear();
+                    var year = (yy < 1000) ? yy + 1900 : yy;
+                    document.write(day + "/" + month + "/" + year);
+                    //]]>
+                </script>
+                <script type="text/javascript">
+                    function startTime(){
+                    today=new Date();
+                    h=today.getHours();
+                    m=today.getMinutes();
+                    s=today.getSeconds();
+                    m=checkTime(m);
+                    s=checkTime(s);
+                    document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+                    t=setTimeout('startTime()',500);}
+                    function checkTime(i)
+                    {if (i<10) {i="0" + i;}return i;}
+                    window.onload=function(){startTime();}
+                </script>
+                <div id="reloj" style="font-size:20px;"></div>  
+            </div>
+                <br>
+            <div class="texto"><h2>MISIÓN</h2><p>
+            Formar Médicos Generales y Posgraduados en salud, con aptitud científica, ética, humanística y ecológica a través de un proceso educativo que busca la construcción del conocimiento mediante objetivos de enseñanza-aprendizaje, que les permita elevar las condiciones de salud de la población, mantener su compromiso con el avance de la ciencia, preservar su entorno y mejorar sus relaciones con el medio ambiente.<br><br>
+            <h2>VISIÓN</h2>
+            Ser un Programa Educativo de calidad reconocido a nivel Nacional e Internacional, líder en docencia, investigación, humanismo y extensión; que forme profesionales competentes en el área de la salud, aplicando las nuevas tecnologías de la información y la comunicación.<br><br>
+            <h2>OBJETIVO</h2>
+            Formar Médicos Generales , mediante un proceso educativo que garantice su desempeño profesional con alta calidad técnica, científica, ética y humanística; capaz de resolver los problemas prioritarios de salud del individuo, la familia, la comunidad y su ambiente; que se actualice sistemáticamente en función de los adelantos científico-tecnológicos, que le permitan aspirar y acceder a los estudios de posgrado e investigación.<br><br>
+            <h2>PERFIL DE INGRESO</h2>
+            Deben cumplir con un perfil que les ofrezca la seguridad del éxito en sus estudios y una sólida preparación para los retos que enfrentarán, este perfil incluye: <br><br>
+            Capacidad Intelectual. <br>
+            Conocimientos básicos. <br>
+            Rendimiento académico.<br>
+            Cultura general.<br>
+            Dominio del idioma español.<br>
+            Comprensión del idioma inglés.<br>
+            Perfil vocacional orientado a las ciencias de la Salud.<br>
+            Estado de salud físico y mental adecuado.<br>
+            Conocimientos de computación.<br><br>
+            <h2>PERFIL DE EGRESO</h2>
+            La Facultad de Ciencias Médicas y Biológicas “Dr. Ignacio Chávez”, egresa Médicos Generales con conocimientos, habilidades y destrezas para otorgar atención médica integral, considerando las principales causas de morbi-mortalidad de la región y del país, con juicio crítico que le permite establecer vínculos de responsabilidad compartida para abordar el proceso de salud enfermedad y poder derivar con oportunidad a los pacientes que lo ameriten y resolver las urgencias no derivables; participar efectivamente con el equipo de salud, actuar con humanismo, equidad y ética bajo una sólida conciencia social, con potencial para modificar su entorno y medio ambiente de manera positiva. Cuentan con herramientas intelectuales para auto-evaluarse, actualizarse en forma continua y permanente; así como poder integrarse en actividades de docencia e investigación que contribuyan al progreso de la medicina, y acceder a estudios de posgrado en áreas específicas del ejercicio profesional</p></div>
+        </div>
+            <br>
+        <div>   <!-- footer -->
+            <h3>Universidad Michoacana de San Nicolás de Hidalgo</h3>
+        </div>
+            <br>
+    </div>
+</body>

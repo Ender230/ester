@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-with, initial-scale-1.0">
+    <title>Facultad de Medicina de la UMSNH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navegador">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="informacion.html">Información</a></li>
+            <li><a href="misionyvision.html">Misión y Visión</a></li>
+            <li><a href="#">Ubicación</a></li>
+        </ul>
+    </div>
+    <div class="encabezado">
+        <img width="100%" src="img/encabezado.jpg">
+    </div>
+    <div id="cuerpo">
+        <div>   <!-- cuerpo de la página -->
+            <div class="reloj">
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var date = new Date();
+                    var d  = date.getDate();
+                    var day = (d < 10) ? '0' + d : d;
+                    var m = date.getMonth() + 1;
+                    var month = (m < 10) ? '0' + m : m;
+                    var yy = date.getYear();
+                    var year = (yy < 1000) ? yy + 1900 : yy;
+                    document.write(day + "/" + month + "/" + year);
+                    //]]>
+                </script>
+                <script type="text/javascript">
+                    function startTime(){
+                    today=new Date();
+                    h=today.getHours();
+                    m=today.getMinutes();
+                    s=today.getSeconds();
+                    m=checkTime(m);
+                    s=checkTime(s);
+                    document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+                    t=setTimeout('startTime()',500);}
+                    function checkTime(i)
+                    {if (i<10) {i="0" + i;}return i;}
+                    window.onload=function(){startTime();}
+                </script>
+                <div id="reloj" style="font-size:20px;"></div>  
+            </div>
+            <h1>Ubicación</h1> <br>
+
+            <div align="center"><img src="img/ubicacion.jpg"></div>
+            <div align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d939.0998453560792!2d-101.17970193749755!3d19.69561363131633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0e0a3e6d836d%3A0xd9434086cfed5fe6!2sFacultad%20de%20Ciencias%20M%C3%A9dicas%20Y%20Biol%C3%B3gicas%20UMSNH!5e0!3m2!1ses-419!2sus!4v1634528592472!5m2!1ses-419!2sus" width="81%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h4>Puede ir a la ubicación directamente desde Google Maps dando click <a target="_blank" href="https://www.google.com/maps/dir//Facultad+de+Ciencias+M%C3%A9dicas+Y+Biol%C3%B3gicas+UMSNH+Av.+Dr.+Rafael+Carrillo+S%2FN,+Esq.+Dr.+Salvador+Gonz%C3%A1lez+Herrej%C3%B3n+Bosque+Cuauht%C3%A9moc+58020+Morelia,+Mich.,+M%C3%A9xico/@19.6953735,-101.1792297,19z/data=!4m5!4m4!1m0!1m2!1m1!1s0x842d0e0a3e6d836d:0xd9434086cfed5fe6">aquí</a></h4>
+            </div>
+                
+        </div>
+            <br>
+        <div>   <!-- footer -->
+            <h3>Universidad Michoacana de San Nicolás de Hidalgo</h3>
+        </div>
+            <br>
+    </div>
+</body>
